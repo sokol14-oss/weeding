@@ -1,0 +1,1 @@
+<img src="/banketinclude/bx_default_logo.gif"  />

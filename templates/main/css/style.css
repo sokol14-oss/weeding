@@ -1,0 +1,8 @@
+@font-face {
+  src: url('/home/bitrix/www/bitrix/templates/main/fonts/Lora-VariableFont_wght.ttf') format('truetype');
+  src:url('/home/bitrix/www/bitrix/templates/main/fonts/Lora-Italic-VariableFont_wght.ttf');
+   font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
