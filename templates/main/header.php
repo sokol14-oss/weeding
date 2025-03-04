@@ -20,7 +20,7 @@ if($page=="/") {
 	<div class="wrap">
 		<?$APPLICATION->ShowPanel();?>
 		<!-- header-->
-	<header class="headaer">
+	<header class="header">
 		<div class="logo-header"><a href="/index.php" class="logo_header">Особняк</a></div>
 		<nav class="nav">
 			<ul>
@@ -64,6 +64,12 @@ if($page=="/") {
 	<!-- /preview -->
 </div>
 <!-- /image-block -->
+</div>
+<?else:?>
+<div class="content-box">
+	<header>
+     	<h1><?$APPLICATION->showTitle(true)?></h1>
+     </header>
 </div>
 <?endif;?>
 <!-- /content-box -->

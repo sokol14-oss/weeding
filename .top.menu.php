@@ -27,6 +27,41 @@ $aMenuLinks = Array(
 		Array(), 
 		Array(), 
 		"" 
+	),
+	Array(
+		"Банкетные залы", 
+		"/banketnye-zaly/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Готовые предложения", 
+		"/gotovye-predlozheniya/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Свадьбы", 
+		"/svadby/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"О нас", 
+		"/o-nas/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Контакты", 
+		"/kontakty/", 
+		Array(), 
+		Array(), 
+		"" 
 	)
 );
 ?>
