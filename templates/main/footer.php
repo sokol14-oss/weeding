@@ -1,45 +1,31 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 IncludeTemplateLangFile(__FILE__);
 ?>
-      
-  
-
 </div>
-<!-- /content-box -->
-                <div class="side-menu">
-                                      <ul>
-                                        <li><a href="">Готовые предложения</a>
-                                        </li>
-                                        <li><a href="">Свадьбы </a>
-                                        </li>
-                                        <li><a href="">О нас</a>
-                                        </li>
-                                        <li><a href="">Контакты</a>
-                                        </li>
-                                    </ul>
-                    </div>
 
+<!-- /wrap -->
 <hr>
 <footer>
 	<div class="footer">
-		<div class="questions"><h1>Частые вопросы</h1></div>
+		<div class="questions"><h1><?=GetMessage("ASKED_QUESTIONS")?></h1></div>
 		<div class="list-container">
 			<div class="list">
-				<p class="list-text"><a href="" class="text">Условия и порядок бронирования</a></p>
+				<p class="list-text"><a href="" class="text"><?=GetMessage("BOOKIN_CONDITION")?></a></p>
 				<a href="" class="click">+</a>
 			</div>
 			<div class="list">
-				<p class="list-text"><a href="" class="text">Рекомендации по расчету алкоголя</a></p>
+				<p class="list-text"><a href="" class="text"><?=GetMessage("RECOMENFATION_FOR_ALCOHOL")?></a></p>
 				<a href="" class="click">+</a>
 			</div>
 		</div>
 		<hr>
 		<div class="footer-block">
-			<div class="logo"></div>
+			
 			<nav class="menu-footer">
 			 <div class="item">
-                    <div class="block">Банкетные залы</div>
                     <ul>
+                        <li><a href="">Банкетные залы</a>
+                        </li>
                         <li><a href="">Готовые предложения</a>
                         </li>
                         <li><a href="">Свадьбы </a>
@@ -54,11 +40,11 @@ IncludeTemplateLangFile(__FILE__);
               <div class="contacts-block">
                
                 <div class="loc-block">
-                    <div class="address">г. Самара, ул. Кольцевая, 79</div>
-                    <div class="phone"><a href="tel:89377999724">+7(937) 799-97-24</a>
+                    <div class="address"><?=GetMessage("ADRESSES_PLACE")?></div>
+                    <div class="phone"><a href="tel:89377999724"><?=GetMessage("PHONE_NUMBER")?></a>
                     </div>
-                    <div class="email"><a href="">info@banket-samara.ru</a></div>
-                    <div class="work">ежедневно с 10:00 до 22:00</div>
+                    <div class="email"><a href=""><?=GetMessage("EMAIL_CONTACTS")?></a></div>
+                    <div class="work"><?=GetMessage("WORK_TIME")?></div>
                 </div>
                 <div class="main-soc-block">
          
@@ -70,10 +56,8 @@ IncludeTemplateLangFile(__FILE__);
             </div>
 		</div>
 	</div>
+
 </footer>
 </div>
-<!--Wrap-->
-
-
 </body>
 </html>

@@ -1,6 +1,6 @@
 @font-face {
-  src: url('/bitrix/templates/main/fonts/Lora-VariableFont_wght.ttf') format('truetype');
-  src:url('/bitrix/templates/main/fonts/Lora-Italic-VariableFont_wght.ttf');
+  src: url('/home/bitrix/www/local/templates/main/fonts/Lora-VariableFont_wght.ttf') format('truetype');
+  src:url('/home/bitrix/www/local/templates/main/fonts/Lora-Italic-VariableFont_wght.ttf');
    font-family: "Lora", serif;
   font-optical-sizing: auto;
   font-weight: weight;
@@ -30,14 +30,14 @@ body {
   box-sizing: content-box;
    background-color: #F9F7F4;
    color: #906F31;
-   font-family: "Lora", serif;
-  
+
+
+
 }
 .wrap {
     width: 80%;
   margin: 0 auto;
   padding: 20px;
-
 }
 
 header  {
@@ -46,7 +46,8 @@ header  {
   align-items: center;  /* Выравниваем элементы по вертикали */
     color: white;
   text-decoration: none;
-  font-size: 2em;
+  font-size: 18px;
+
 
 }
 header button {
@@ -143,111 +144,39 @@ text-align: center;
     margin: 10px;
 
 }
-h1 {
-   font-size: 3em;
-   text-align: center;
-}
-div .card {
- display: flex;
- flex-wrap: wrap;
- align-items: center;
- justify-content: space-between;
- font-size: 2em;
-}
-.title-card {
-font-weight: bold;
-}
-
-
-div .ready {
-  display: flex;
-flex-wrap: wrap;
- align-items: center;
- justify-content: space-between;
- font-size: 2em;
-}
-
-.calc a{
-  text-decoration: underline ;
-}
-
-.weeding {
-  display: flex;
-  justify-content: space-between;
-  box-sizing: content-box;
-  align-items: center;
-  font-size: 1.3em;
-  font-weight: bold;
-  margin-top: 100px;
-}
-
-.weeding-card{
-  width: 300px;
-
-}
-.weeding-card::before {
-content: url(/bitrix/templates/main/img/vine.png);
-
-}
-
-.action-weeding {
+.questions {
+  padding: 20px;
   text-align: center;
-  margin-top: 150px;
-}
-
-.title-weeding {
-  font-size: 2em;
-  margin-bottom: 40px;
-}
-
-.services {
-  font-size: 1.3em;
-  text-align: center;
-}
-
-.services ul li  {
-  
-  list-style-image: url(/bitrix/templates/main/img/vine.png) ;
-   font-size: 1em;
-   margin-top: 20px;
-   text-align: justify;
 }
 .list {
-  list-style-image: url(/bitrix/templates/main/img/vine.png) ;
+  display: inline;
 }
-.title-lead{
-  text-align: center;
-  margin-bottom: 100px;
-  font-size: 2em;
+.list-text {
+   display: inline-block;
+   margin-left: 400px;
 }
-.text {
-width: 500px;
-text-align: center;
-border: 5px;
-border-style: solid;
-border-radius: 20px;
-margin-bottom: 20px;
-box-sizing: content-box;
-   font-size: 2em;
-}
-
-.card-lead {
+.footer-block {
   display: flex;
-  flex-wrap: wrap;
-  box-sizing: border-box;
+    padding-top: 20px;
+    
+
 }
-
-.preview-text {
-
-text-align: center;
-
-margin-bottom: 20px;
-   font-size: 2em;
+.menu-footer li {
+  margin-bottom: 20px;
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  
+  
 }
-
-.side-menu {
-position: absolute;
-top: 30%;
-left: 0%;
-
+.contacts-block  {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: right;
+  width: 50%;
+  place-items: center;
+  margin-top: 120px;
+}
+.loc-block {
+  margin-bottom: 20px;
 }
