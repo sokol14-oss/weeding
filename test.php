@@ -2,12 +2,18 @@
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("тест");
 ?><?$APPLICATION->IncludeComponent(
-	"bitrix:main.include",
-	"side",
+	"bitrix:menu",
+	"vertical_multilevel",
 	Array(
-		"AREA_FILE_RECURSIVE" => "Y",
-		"AREA_FILE_SHOW" => "sect",
-		"AREA_FILE_SUFFIX" => "sect",
-		"EDIT_TEMPLATE" => ""
+		"ALLOW_MULTI_SELECT" => "N",
+		"CHILD_MENU_TYPE" => "left",
+		"DELAY" => "N",
+		"MAX_LEVEL" => "1",
+		"MENU_CACHE_GET_VARS" => array(""),
+		"MENU_CACHE_TIME" => "3600",
+		"MENU_CACHE_TYPE" => "A",
+		"MENU_CACHE_USE_GROUPS" => "Y",
+		"ROOT_MENU_TYPE" => "leftfirst",
+		"USE_EXT" => "Y"
 	)
 );?><br><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

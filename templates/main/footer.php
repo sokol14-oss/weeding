@@ -1,8 +1,24 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 IncludeTemplateLangFile(__FILE__);
 ?>
+      
+  
+
 </div>
-<!-- /wrap -->
+<!-- /content-box -->
+                <div class="side-menu">
+                                      <ul>
+                                        <li><a href="">Готовые предложения</a>
+                                        </li>
+                                        <li><a href="">Свадьбы </a>
+                                        </li>
+                                        <li><a href="">О нас</a>
+                                        </li>
+                                        <li><a href="">Контакты</a>
+                                        </li>
+                                    </ul>
+                    </div>
+
 <hr>
 <footer>
 	<div class="footer">
@@ -54,8 +70,10 @@ IncludeTemplateLangFile(__FILE__);
             </div>
 		</div>
 	</div>
-
 </footer>
+</div>
+<!--Wrap-->
+
 
 </body>
 </html>

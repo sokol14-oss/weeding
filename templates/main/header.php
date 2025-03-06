@@ -16,22 +16,45 @@ if($page=="/") {
 <title><?$APPLICATION->ShowTitle()?></title>
 </head>
 <body>
+	<?$APPLICATION->ShowPanel();?>
+
+
 	<!-- wrap -->
-	<div class="wrap">
-		<?$APPLICATION->ShowPanel();?>
+
+
+		<div class="wrap">
+				
+		
 		<!-- header-->
 	<header class="header">
 		<div class="logo-header"><a href="/index.php" class="logo_header">Особняк</a></div>
-		<nav class="nav">
-			<ul>
-				<li><a href="">Банкетные залы</a></li>
-				<li><a href="">Готовые предложения</a></li>
-				<li><a href="">Свадьбы</a></li>
-				<li><a href="">О нас</a></li>
-				<li><a href="">Контакты</a></li>
-			</ul>
-		</nav>
+		<?$APPLICATION->IncludeComponent(
+	"bitrix:menu",
+	"top",
+	Array(
+		"ALLOW_MULTI_SELECT" => "N",
+		"CHILD_MENU_TYPE" => "leftfirst",
+		"DELAY" => "N",
+		"MAX_LEVEL" => "1",
+		"MENU_CACHE_GET_VARS" => array(0=>"",),
+		"MENU_CACHE_TIME" => "3600",
+		"MENU_CACHE_TYPE" => "A",
+		"MENU_CACHE_USE_GROUPS" => "Y",
+		"ROOT_MENU_TYPE" => "top",
+		"USE_EXT" => "Y"
+	)
+);?>
 		<div class="header-button"><button type="submit">Расчитать стоимость</button></div>
+
+<div id="popup">
+	 <button class="close">close</button>
+	<form id="calk" method="get" action="" name="popup">
+		<input type="text" name="text" value="text">
+		<input type="text" name="tel" value="tel">
+
+	</form>
+</div>
+
 	</header>
 	<!-- /header-->
 	<hr>
@@ -54,24 +77,37 @@ if($page=="/") {
 		<img src="">
 	</div>
 	<div class="preview">
-		<ul>
-				<li>Три зала на выбор: Белый, Каминный и Атриум</li>
-				<li>Вместимость до 200 человек</li>
-				<li>Стоимость от 2.000 руб/чел</li>
-				<li>Удобное расположение г. Самара, ул. Кольцевая, д. 79</li>
-			</ul>
+
+				<div class="preview_content">Три зала на выбор: Белый, Каминный и Атриум</div>
+				<div class="preview_content"><li>Вместимость до 200 человек</div>
+				<div class="preview_content"><li>Стоимость от 2.000 руб/чел</div>
+				<div class="preview_content"><li>Удобное расположение г. Самара, ул. Кольцевая, д. 79</div>
+	
 	</div>
 	<!-- /preview -->
 </div>
 <!-- /image-block -->
-</div>
 <?else:?>
 <div class="content-box">
-	<header>
+
      	<h1><?$APPLICATION->showTitle(true)?></h1>
-     </header>
-</div>
+     	<hr>
+     
+
 <?endif;?>
+<script type="text/javascript">
+	const button= document.querySelector(".header-button");
+	const popup = document.querySelector("#popup");
+	const close= document.querySelector(".close");
+	button.onclick = function () {
+  popup.style.display = 'block';
+};
+close.onclick = function () {
+  popup.style.display = 'none';
+};
+
+
+</script>
 <!-- /content-box -->
 
 

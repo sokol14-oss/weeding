@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Координатор";
+$arDirProperties = Array(
+
+);
+?>

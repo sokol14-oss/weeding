@@ -1,64 +1,29 @@
 <?
 $aMenuLinks = Array(
 	Array(
-		"О компании", 
-		"about/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
-		"Новости", 
-		"news/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
-		"Услуги", 
-		"services/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
-		"Контакты", 
-		"contacts/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
 		"Банкетные залы", 
-		"/banketnye-zaly/", 
+		"/halls/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
 		"Готовые предложения", 
-		"/gotovye-predlozheniya/", 
+		"/ready/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
 		"Свадьбы", 
-		"/svadby/", 
+		"/wedding/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"О нас", 
-		"/o-nas/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
-		"Контакты", 
-		"/kontakty/", 
+		"Услуги", 
+		"/services/", 
 		Array(), 
 		Array(), 
 		"" 

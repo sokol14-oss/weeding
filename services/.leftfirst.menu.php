@@ -2,21 +2,21 @@
 $aMenuLinks = Array(
 	Array(
 		"Декор", 
-		"/services/dekor/index.php", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
-		"Координатор", 
-		"/services/koordinator/index.php", 
+		"/services/dekor/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
 		"Ведущая", 
-		"/services/leading/index.php", 
+		"/services/leading/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Координатор", 
+		"/services/koordinator/", 
 		Array(), 
 		Array(), 
 		"" 

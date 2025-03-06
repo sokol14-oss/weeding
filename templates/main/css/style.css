@@ -1,8 +1,253 @@
 @font-face {
-  src: url('/home/bitrix/www/bitrix/templates/main/fonts/Lora-VariableFont_wght.ttf') format('truetype');
-  src:url('/home/bitrix/www/bitrix/templates/main/fonts/Lora-Italic-VariableFont_wght.ttf');
+  src: url('/bitrix/templates/main/fonts/Lora-VariableFont_wght.ttf') format('truetype');
+  src:url('/bitrix/templates/main/fonts/Lora-Italic-VariableFont_wght.ttf');
    font-family: "Lora", serif;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
+}
+
+
+#popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 20%;
+bottom: 20%;
+  width: 50%;
+  height: 50%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: content-box;
+   background-color: #F9F7F4;
+   color: #906F31;
+   font-family: "Lora", serif;
+  
+}
+.wrap {
+    width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+
+}
+
+header  {
+    display: flex;  /* Выстраиваем элементы внутри контейнера в строку */
+  justify-content: space-between;  /* Распределяем элементы по ширине контейнера */
+  align-items: center;  /* Выравниваем элементы по вертикали */
+    color: white;
+  text-decoration: none;
+  font-size: 2em;
+
+}
+header button {
+  appearance: none;
+  border: 0;
+  border-radius: 5px;
+  background: #735927;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 20px;
+}
+
+header button:hover {
+  box-shadow: none;
+  position: relative;
+  top: 5px;
+  cursor: pointer;
+}
+
+.content-box .title h1 {
+text-align: center;
+font-size: 4em;
+}
+
+.nav {
+  background-color: #F9F7F4;
+  text-align: center;
+}
+
+.nav  li:hover {
+box-shadow: none;
+  position: relative;
+  top: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+  color: #906F31;
+}
+
+nav li {
+  display: inline;
+  margin: 0 10px;
+}
+nav a {
+  color: #906F31;
+  text-decoration: none;
+  font-size: 20px;
+}
+.action-title {
+text-align: center;
+}
+
+.action-text {
+text-align: center;
+}
+
+.reserv-button button {
+   appearance: none;
+  border: 0;
+  border-radius: 5px;
+  background: #735927;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 1.3em;
+}
+
+.reserv-button button:hover {
+    box-shadow: none;
+  position: relative;
+  top: 5px;
+  cursor: pointer
+}
+
+.reserv-button {
+  text-align: center;
+}
+
+.preview li {
+   display: inline;
+  margin: 0 10px;
+  text-align: center;
+}
+.preview {
+  display: flex;
+ justify-content: center;
+}
+.preview_content {
+  padding: 20px;
+    background: #735927;
+    color: #fff;
+    border-radius: 5px;
+    margin: 10px;
+
+}
+h1 {
+   font-size: 3em;
+   text-align: center;
+}
+div .card {
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: space-between;
+ font-size: 2em;
+}
+.title-card {
+font-weight: bold;
+}
+
+
+div .ready {
+  display: flex;
+flex-wrap: wrap;
+ align-items: center;
+ justify-content: space-between;
+ font-size: 2em;
+}
+
+.calc a{
+  text-decoration: underline ;
+}
+
+.weeding {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: content-box;
+  align-items: center;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-top: 100px;
+}
+
+.weeding-card{
+  width: 300px;
+
+}
+.weeding-card::before {
+content: url(/bitrix/templates/main/img/vine.png);
+
+}
+
+.action-weeding {
+  text-align: center;
+  margin-top: 150px;
+}
+
+.title-weeding {
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+
+.services {
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.services ul li  {
+  
+  list-style-image: url(/bitrix/templates/main/img/vine.png) ;
+   font-size: 1em;
+   margin-top: 20px;
+   text-align: justify;
+}
+.list {
+  list-style-image: url(/bitrix/templates/main/img/vine.png) ;
+}
+.title-lead{
+  text-align: center;
+  margin-bottom: 100px;
+  font-size: 2em;
+}
+.text {
+width: 500px;
+text-align: center;
+border: 5px;
+border-style: solid;
+border-radius: 20px;
+margin-bottom: 20px;
+box-sizing: content-box;
+   font-size: 2em;
+}
+
+.card-lead {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.preview-text {
+
+text-align: center;
+
+margin-bottom: 20px;
+   font-size: 2em;
+}
+
+.side-menu {
+position: absolute;
+top: 30%;
+left: 0%;
+
 }
