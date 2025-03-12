@@ -1,8 +1,175 @@
 @font-face {
-  src: url('/home/bitrix/www/bitrix/templates/main/fonts/Lora-VariableFont_wght.ttf') format('truetype');
-  src:url('/home/bitrix/www/bitrix/templates/main/fonts/Lora-Italic-VariableFont_wght.ttf');
+  src: url('/home/bitrix/www/local/templates/main/fonts/Lora-VariableFont_wght.ttf') format('truetype');
+  src:url('/home/bitrix/www/local/templates/main/fonts/Lora-Italic-VariableFont_wght.ttf');
    font-family: "Lora", serif;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
+}
+
+
+#popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 20%;
+bottom: 20%;
+  width: 50%;
+  height: 50%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: content-box;
+   background-color: #F9F7F4;
+   color: #906F31;
+
+
+}
+.wrap {
+    width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header  {
+    display: flex;  /* Выстраиваем элементы внутри контейнера в строку */
+  justify-content: space-between;  /* Распределяем элементы по ширине контейнера */
+  align-items: center;  /* Выравниваем элементы по вертикали */
+    color: white;
+  text-decoration: none;
+  font-size: 18px;
+
+
+}
+header button {
+  appearance: none;
+  border: 0;
+  border-radius: 5px;
+  background: #735927;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 16px;
+}
+
+header button:hover {
+  box-shadow: none;
+  position: relative;
+  top: 5px;
+  cursor: pointer
+}
+
+.content-box .title h1 {
+text-align: center;
+font-size: 4em;
+}
+
+.nav {
+  background-color: #F9F7F4;
+  text-align: center;
+  
+
+}
+a {
+  text-decoration: none;
+  color: #906F31;
+}
+
+nav li {
+  display: inline;
+  margin: 0 10px;
+}
+nav a {
+  color: #906F31;
+  text-decoration: none;
+  font-size: 18px;
+}
+.action-title {
+text-align: center;
+}
+
+.action-text {
+text-align: center;
+}
+
+.reserv-button button {
+   appearance: none;
+  border: 0;
+  border-radius: 5px;
+  background: #735927;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 16px;
+}
+
+.reserv-button button:hover {
+    box-shadow: none;
+  position: relative;
+  top: 5px;
+  cursor: pointer
+}
+
+.reserv-button {
+  text-align: center;
+}
+
+.preview li {
+   display: inline;
+  margin: 0 10px;
+  text-align: center;
+}
+.preview {
+  display: flex;
+ justify-content: center;
+}
+.preview_content {
+  padding: 20px;
+    background: #735927;
+    color: #fff;
+    border-radius: 5px;
+    margin: 10px;
+
+}
+.questions {
+  padding: 20px;
+  text-align: center;
+}
+.list {
+  display: inline;
+}
+.list-text {
+   display: inline-block;
+   margin-left: 400px;
+}
+.footer-block {
+  display: flex;
+    padding-top: 20px;
+    
+
+}
+.menu-footer li {
+  margin-bottom: 20px;
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  
+  
+}
+.contacts-block  {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: right;
+  width: 50%;
+  place-items: center;
+  margin-top: 120px;
+}
+.loc-block {
+  margin-bottom: 20px;
 }
